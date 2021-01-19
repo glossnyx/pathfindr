@@ -2,13 +2,13 @@ import { h, render } from "preact";
 import Router, { Route } from "preact-router";
 import "preact/devtools";
 
-const Search = () => <div>Search</div>;
-const Mod = (props: { id: string }) => <div>Mod {props.id}</div>;
+import ModPage from "~/pages/ModPage";
+import SearchPage from "~/pages/SearchPage";
 
 const Main = () => (
 	<Router>
-		<Route default path="/" component={Search} />
-		<Route path="/mod/:id" component={Mod} />
+		<Route default path="/" component={SearchPage} />
+		<Route path="/mod/:id" component={ModPage} />
 	</Router>
 );
 

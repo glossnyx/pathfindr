@@ -11,4 +11,7 @@ module.exports = {
 		minify: true,
 		treeshake: true,
 	},
+	alias: {
+		"~": "./src",
+	},
 };

@@ -8,6 +8,7 @@
 		"jsxFactory": "h",
 		"jsxFragmentFactory": "Fragment",
 		"baseUrl": "./",
+		"paths": { "~/*": ["./src/*"] },
 		"noEmit": true,
 		"strict": true,
 		"skipLibCheck": true,
