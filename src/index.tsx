@@ -2,6 +2,8 @@ import { h, render } from "preact";
 import Router, { Route } from "preact-router";
 import "preact/devtools";
 
+import "./index.css";
+
 import ModPage from "~/pages/ModPage";
 import SearchPage from "~/pages/SearchPage";
 
@@ -12,4 +14,4 @@ const Main = () => (
 	</Router>
 );
 
-render(<Main />, document.getElementById("root") ?? document.body);
+render(<Main />, document.querySelector("#root") ?? document.body);

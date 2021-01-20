@@ -5,12 +5,15 @@
 	},
 	"dependencies": {
 		"preact": "^10.5.10",
-		"preact-router": "^3.2.1"
+		"preact-router": "^3.2.1",
+		"react-infinite-scroll-component": "^5.1.0",
+		"use-debounce": "^5.2.0"
 	},
 	"devDependencies": {
 		"@prefresh/snowpack": "^3.0.1",
 		"@snowpack/plugin-dotenv": "^2.0.5",
 		"@snowpack/plugin-typescript": "^1.2.1",
+		"@types/react-infinite-scroll-component": "^4.2.5",
 		"prettier": "^2.2.1",
 		"snowpack": "^3.0.11",
 		"typescript": "^4.1.3"

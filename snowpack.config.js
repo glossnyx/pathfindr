@@ -12,6 +12,7 @@ module.exports = {
 		treeshake: true,
 	},
 	alias: {
+		react: "preact/compat",
 		"~": "./src",
 	},
 };
