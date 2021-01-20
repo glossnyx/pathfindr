@@ -8,7 +8,7 @@ type Mod = {
 	versions: string[];
 	downloads: number;
 	page_url: string;
-	icon_url: string;
+	icon_url?: string;
 	author_url: string;
 	date_created: Date;
 	date_modified: Date;
