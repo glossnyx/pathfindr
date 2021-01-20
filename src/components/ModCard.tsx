@@ -8,7 +8,7 @@ const ModCard = ({ mod }: { mod: Mod }) => {
 	return (
 		<a class={styles.card} href={url}>
 			<img
-				src={mod.icon_url}
+				src={mod.icon_url ?? "https://cdn.modrinth.com/placeholder.svg"}
 				class={styles.icon}
 				width="64"
 				height="64"
