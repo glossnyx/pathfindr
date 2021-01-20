@@ -5,7 +5,7 @@ export type FormatOptions = {
 	offset: number;
 };
 
-export const LIMIT = 30;
+export const LIMIT = 60;
 
 const createParameters = (parameters: Record<string, any>) => {
 	return Object.entries(parameters)
