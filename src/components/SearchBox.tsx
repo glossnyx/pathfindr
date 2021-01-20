@@ -32,6 +32,7 @@ const SearchBox = ({ query }: { query: QueryOperations }) => {
 			<input
 				class={styles.input}
 				placeholder="Search"
+				aria-label="Search"
 				onInput={(event) => handleInput(event.currentTarget.value, query)}
 			/>
 			<svg

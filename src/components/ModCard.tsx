@@ -7,7 +7,13 @@ const ModCard = ({ mod }: { mod: Mod }) => {
 
 	return (
 		<a class={styles.card} href={url}>
-			<img src={mod.icon_url} class={styles.icon} />
+			<img
+				src={mod.icon_url}
+				class={styles.icon}
+				width="64"
+				height="64"
+				alt={`${mod.title} icon`}
+			/>
 			<h1 class={styles.title}>{mod.title}</h1>
 			<p class={styles.description}>{mod.description}</p>
 		</a>
