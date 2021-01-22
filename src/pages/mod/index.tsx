@@ -10,7 +10,6 @@ import ModTitle from "~/pages/mod/components/ModTitle";
 import ModSource from "~/pages/mod/components/ModSource";
 import ModDescription from "~/pages/mod/components/ModDescription";
 import ModBody from "~/pages/mod/components/ModBody";
-import ModInfo from "~/pages/mod/components/ModInfo";
 import ModMembers from "~/pages/mod/components/ModMembers";
 import ModVersions from "~/pages/mod/components/ModVersions";
 
@@ -29,7 +28,6 @@ const ModPage = ({ id }: { id: string }) => {
 			<main class={styles.content}>
 				<ModDescription />
 				<ModBody />
-				<ModInfo />
 				<ModMembers />
 				<ModVersions />
 			</main>

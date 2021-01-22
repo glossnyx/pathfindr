@@ -16,7 +16,6 @@
 		"description"
 		"body"
 		"members"
-		"info"
 		"versions";
 }
 
@@ -44,11 +43,10 @@
 	}
 
 	.content {
-		grid-template-rows: repeat(3, max-content);
+		grid-template-rows: repeat(2, max-content);
 		grid-template-columns: auto 35rem;
 		grid-template-areas:
 			"body description"
-			"body info"
 			"body members"
 			"body versions";
 	}

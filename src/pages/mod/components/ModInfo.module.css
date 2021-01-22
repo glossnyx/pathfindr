@@ -1,4 +1,0 @@
-.container {
-	composes: card from global;
-	grid-area: info;
-}
