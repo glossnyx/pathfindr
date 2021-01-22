@@ -1,18 +1,18 @@
 .card {
-	background-color: #333333;
-	color: #ececec;
-	border-radius: 0.625rem;
-	padding: 1rem;
+	composes: card from global;
 	text-decoration: none;
 
 	display: grid;
-	grid-template-areas:
-		"icon title"
-		"icon description";
-
 	grid-template-columns: auto 1fr;
 	grid-template-rows: auto 1fr;
 	gap: 0rem 1rem;
+	grid-template-areas:
+		"icon title"
+		"icon description";
+}
+
+.card:hover {
+	background-color: #404040;
 }
 
 .title {

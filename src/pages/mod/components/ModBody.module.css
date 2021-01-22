@@ -1,0 +1,49 @@
+.container {
+	composes: markdown-body from global;
+	composes: card from global;
+	grid-area: body;
+}
+
+body .container {
+	color: #ececec;
+}
+
+body .container h1,
+body .container h2 {
+	border-bottom: 1px solid #444444;
+}
+
+body .container a {
+	color: rgb(35, 173, 228);
+	text-decoration: none;
+}
+
+body .container a:hover {
+	text-decoration: none;
+	color: rgb(107, 213, 255);
+}
+
+body .container hr {
+	height: 1px;
+	background-color: #444444;
+}
+
+body .container pre,
+body .container code {
+	background-color: #252525;
+}
+
+@media (max-width: 1400px) {
+	body .container h1 {
+		font-size: 1.5rem;
+	}
+
+	body .container h2 {
+		font-size: 1.2rem;
+	}
+}
+
+body .container img {
+	background-color: initial;
+	max-width: 100%;
+}

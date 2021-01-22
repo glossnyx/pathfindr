@@ -1,5 +1,6 @@
 import { useState } from "preact/hooks";
-import type QueryOperations from "~/models/QueryOperations";
+
+import type QueryOperations from "~/pages/search/models/QueryOperations";
 
 const useQuery = (): QueryOperations => {
 	const [name, setName] = useState("");

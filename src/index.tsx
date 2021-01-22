@@ -4,8 +4,8 @@ import "preact/devtools";
 
 import "./index.css";
 
-import ModPage from "~/pages/ModPage";
-import SearchPage from "~/pages/SearchPage";
+import ModPage from "~/pages/mod";
+import SearchPage from "~/pages/search";
 
 const Main = () => (
 	<Router>

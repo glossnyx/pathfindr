@@ -1,0 +1,15 @@
+.container {
+	composes: card from global;
+	grid-area: icon;
+	padding: 0.5rem;
+	width: 5rem;
+	height: 5rem;
+}
+
+.container:hover {
+	background-color: #404040;
+}
+
+.icon {
+	composes: rounded from global;
+}

@@ -9,3 +9,14 @@ body {
 	padding: 2rem;
 	margin: 0;
 }
+
+.rounded {
+	border-radius: 0.625rem;
+}
+
+.card {
+	border-radius: 0.625rem;
+	background-color: #333333;
+	color: #ececec;
+	padding: 1rem;
+}

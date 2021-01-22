@@ -1,8 +1,9 @@
 import { h } from "preact";
-import type Mod from "~/models/Mod";
 import styles from "./ModCard.module.css";
 
-const ModCard = ({ mod }: { mod: Mod }) => {
+import type ModSearchResult from "~/pages/search/models/ModSearchResult";
+
+const ModCard = ({ mod }: { mod: ModSearchResult }) => {
 	const url = `/mod/${mod.slug ?? mod.mod_id.replace("local-", "")}`;
 
 	return (

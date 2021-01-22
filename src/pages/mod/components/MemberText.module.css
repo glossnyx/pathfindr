@@ -1,0 +1,19 @@
+.container {
+	composes: card from global;
+	text-decoration: none;
+}
+
+.container:hover {
+	background-color: #404040;
+}
+
+.heading {
+	margin: 0;
+	font-size: 1.2rem;
+}
+
+.role {
+	composes: heading;
+	color: #9c9c9c;
+	font-weight: normal;
+}

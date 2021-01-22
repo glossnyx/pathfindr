@@ -1,7 +1,9 @@
 import { h } from "preact";
 import styles from "./SearchBox.module.css";
-import type QueryOperations from "~/models/QueryOperations";
-import SearchIcon from "~/components/SearchIcon";
+
+import type QueryOperations from "~/pages/search/models/QueryOperations";
+
+import SearchIcon from "~/pages/search/components/SearchIcon";
 
 const categoryRegex = /categories:\w+/g;
 const versionRegex = /versions:[\w-]+/g;

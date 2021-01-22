@@ -1,4 +1,4 @@
-import type QueryOperations from "~/models/QueryOperations";
+import type QueryOperations from "~/pages/search/models/QueryOperations";
 
 export type FormatOptions = {
 	query: QueryOperations;
@@ -14,7 +14,7 @@ const createParameters = (parameters: Record<string, any>) => {
 		.join("&");
 };
 
-const formatRequest = ({ query, offset }: FormatOptions): string => {
+const formatSearch = ({ query, offset }: FormatOptions): string => {
 	const { name, sort: index, categories, versions } = query;
 
 	const facets = [
@@ -30,7 +30,7 @@ const formatRequest = ({ query, offset }: FormatOptions): string => {
 		offset,
 	});
 
-	return `https://api.modrinth.com/api/v1/mod?${parameters}`;
+	return `/mod?${parameters}`;
 };
 
-export default formatRequest;
+export default formatSearch;

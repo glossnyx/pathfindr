@@ -1,0 +1,10 @@
+.container {
+	composes: card from global;
+	padding: 0.5rem;
+	width: 5rem;
+	height: 5rem;
+}
+
+.icon {
+	composes: rounded from global;
+}

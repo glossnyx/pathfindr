@@ -1,0 +1,55 @@
+.header {
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: auto 1fr auto;
+	grid-template-areas:
+		"icon . source"
+		"title title title";
+}
+
+.content {
+	padding-top: 1rem;
+	display: grid;
+	gap: 1rem;
+	align-items: start;
+	grid-template-areas:
+		"description"
+		"body"
+		"members"
+		"info"
+		"versions";
+}
+
+.content > div {
+	min-width: 0;
+}
+
+.title {
+	margin: 0;
+	width: fit-content;
+	background-color: #333333;
+	color: #ececec;
+	border-radius: 0.625rem;
+	padding: 1rem;
+}
+
+.author {
+	color: #a5a5a5;
+}
+
+@media (min-width: 1400px) {
+	.header {
+		justify-content: space-between;
+		grid-template-areas: "icon title source";
+	}
+
+	.content {
+		grid-template-rows: repeat(3, max-content);
+		grid-template-columns: auto 35rem;
+		grid-template-areas:
+			"body description"
+			"body info"
+			"body members"
+			"body versions";
+	}
+}

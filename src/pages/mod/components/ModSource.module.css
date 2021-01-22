@@ -1,0 +1,17 @@
+.container {
+	composes: card from global;
+	grid-area: source;
+	width: 5rem;
+	height: 5rem;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+}
+
+.container[href^="h"]:hover {
+	background-color: #404040;
+}
+
+.container:not([href^="h"]):hover {
+	cursor: not-allowed;
+}

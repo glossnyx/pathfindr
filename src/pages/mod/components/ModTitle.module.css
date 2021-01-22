@@ -1,0 +1,22 @@
+.container {
+	composes: card from global;
+	grid-area: title;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+}
+
+.heading {
+	margin: 0;
+	font-size: 1.5rem;
+}
+
+@media (min-width: 1400px) {
+	.container {
+		justify-content: initial;
+	}
+
+	.heading {
+		font-size: 2.25rem;
+	}
+}
