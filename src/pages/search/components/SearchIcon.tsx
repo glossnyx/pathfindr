@@ -1,9 +1,10 @@
 import { h } from "preact";
+import styles from "./SearchIcon.module.css";
 
-const SearchIcon = ({ class: className }: { class?: string }) => {
+const SearchIcon = () => {
 	return (
 		<svg
-			class={className}
+			class={styles.icon}
 			width="32"
 			height="32"
 			viewBox="0 0 32 32"

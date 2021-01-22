@@ -38,7 +38,7 @@ const SearchBox = ({ query }: { query: QueryOperations }) => {
 				aria-label="Search"
 				onInput={(event) => handleInput(event.currentTarget.value, query)}
 			/>
-			<SearchIcon class={styles.icon} />
+			<SearchIcon />
 		</div>
 	);
 };
