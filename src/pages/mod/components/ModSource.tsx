@@ -11,6 +11,7 @@ const ModSource = () => {
 		<a
 			class={styles.container}
 			href={mod?.source_url}
+			aria-label="Source"
 			target="_blank"
 			rel="noopener"
 		>
