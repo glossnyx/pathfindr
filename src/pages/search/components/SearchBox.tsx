@@ -6,7 +6,7 @@ import type QueryOperations from "~/pages/search/models/QueryOperations";
 import SearchIcon from "~/pages/search/components/SearchIcon";
 
 const categoryRegex = /categories:\w+/g;
-const versionRegex = /versions:[\w-]+/g;
+const versionRegex = /versions:[\w.-]+/g;
 const sortRegex = /sort:\w+/g;
 
 const findMatches = (value: string, regex: RegExp) => value.match(regex);
