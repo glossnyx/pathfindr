@@ -9,16 +9,14 @@ const categoryRegex = /categories:\w+/g;
 const versionRegex = /versions:[\w.-]+/g;
 const sortRegex = /sort:\w+/g;
 
-const findMatches = (value: string, regex: RegExp) => value.match(regex);
-
 const handleInput = (value: string, query: QueryOperations) => {
-	const categoryMatches = findMatches(value, categoryRegex);
-	const versionMatches = findMatches(value, versionRegex);
-	const sortMatches = findMatches(value, sortRegex);
+	const categoryMatches = value.match(categoryRegex);
+	const versionMatches = value.match(versionRegex);
+	const sortMatches = value.match(sortRegex);
 
 	query.setCategories(categoryMatches ?? []);
 	query.setVersions(versionMatches ?? []);
-	query.setSort(sortMatches?.[0].replace("sort:", "") ?? "relevance");
+	query.setSort(sortMatches?.[0].slice(5) ?? "relevance");
 
 	query.setName(
 		value
